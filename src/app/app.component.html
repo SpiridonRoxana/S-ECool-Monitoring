@@ -1,0 +1,11 @@
+<div class="monitoring-view">
+    <p class="monitoring-title">Energy Cool Construction Site</p>
+    <div  class="monitoring-load">
+        <div *ngIf="this.showLoading" class="monitoring-load-content">
+            <mat-spinner diameter="35" mode="indeterminate" #loadingSpinner></mat-spinner>
+            <p id="loadingText">Please wait for the stream to load...</p>
+        </div>
+    </div>
+    <canvas #videoPlayer class="monitoring-container"></canvas>
+
+</div>
